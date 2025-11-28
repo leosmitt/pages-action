@@ -16,9 +16,7 @@ jobs:
           apiToken: ZaC2z6YLBD4AeWi11oFLzST-CoCB_A6MKQ51XzPj
           accountId: 468cce80dfb431f3a4058e6dc6031a44
           projectName: pages-action
-          directory: ./
-          gitHubToken: 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
-        id: publish
+          directory: main
       - name: Outputs
         run: |
           echo "ID: ${{ steps.publish.outputs.id }}"
