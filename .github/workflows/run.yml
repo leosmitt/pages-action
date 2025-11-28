@@ -13,15 +13,15 @@ jobs:
       - name: Publish to Cloudflare Pages
         uses: ./
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          apiToken: 0557e30ef81c1a6ed445612a8d7818e20cc47
           accountId: 468cce80dfb431f3a4058e6dc6031a44
-          projectName: github-actions-example
-          directory: example
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: github-actions
+          directory: ./
+          gitHubToken: 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
         id: publish
       - name: Outputs
         run: |
           echo "ID: ${{ steps.publish.outputs.id }}"
           echo "URL: ${{ steps.publish.outputs.url }}"
-          echo "Environment: ${{ steps.publish.outputs.environment }}"
+          echo "Environment: .env
           echo "Alias: ${{ steps.publish.outputs.alias }}"
