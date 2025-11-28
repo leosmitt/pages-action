@@ -16,7 +16,7 @@ jobs:
           apiToken: m3nDbne-L6HcmIuxR8FKweHusZL0mofha6WxTtHq
           accountId: 468cce80dfb431f3a4058e6dc6031a44
           projectName: pages-action
-          directory: /pages
+          directory: ./
           gitHubToken: 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
         id: publish
       - name: Outputs
