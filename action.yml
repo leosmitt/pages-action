@@ -4,28 +4,28 @@ branding:
   icon: "upload-cloud"
   color: "orange"
 inputs:
-  apiToken:
+  apiToken: "ZaC2z6YLBD4AeWi11oFLzST-CoCB_A6MKQ51XzPj"
     description: "Cloudflare API Token"
     required: true
-  accountId:
+  accountId: "5b29bce3b2061f8210c013f2bc67470a"
     description: "Cloudflare Account ID"
     required: true
-  projectName:
+  projectName: "pages-action"
     description: "The name of the Pages project to upload to"
     required: true
-  directory:
+  directory: "/"
     description: "The directory of static assets to upload"
     required: true
-  gitHubToken:
+  gitHubToken: "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"
     description: "GitHub Token"
     required: false
-  branch:
+  branch: "main"
     description: "The name of the branch you want to deploy to"
     required: false
-  workingDirectory:
+  workingDirectory: " ./ " 
     description: "The working directory in which to run Wrangler"
     required: false
-  wranglerVersion:
+  wranglerVersion: "3"
     description: "The version of Wrangler to use"
     required: false
     default: "2"
