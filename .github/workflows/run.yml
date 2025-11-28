@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Publish to Cloudflare Pages
+      - name: pages-action
         uses: ./
         with:
-          apiToken: 0557e30ef81c1a6ed445612a8d7818e20cc47
+          apiToken: m3nDbne-L6HcmIuxR8FKweHusZL0mofha6WxTtHq
           accountId: 468cce80dfb431f3a4058e6dc6031a44
-          projectName: github-actions
-          directory: /
+          projectName: pages-action
+          directory: /pages
           gitHubToken: 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
         id: publish
       - name: Outputs
