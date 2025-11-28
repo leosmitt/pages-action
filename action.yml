@@ -22,7 +22,7 @@ inputs:
   branch: "main"
     description: "The name of the branch you want to deploy to"
     required: false
-  workingDirectory: " ./ " 
+  workingDirectory: "main/action.yml" 
     description: "The working directory in which to run Wrangler"
     required: false
   wranglerVersion: "3"
