@@ -18,17 +18,17 @@ inputs:
     required: true
   gitHubToken:
     description: "GitHub Token"
-    required: false
+    required: true
   branch:
     description: "The name of the branch you want to deploy to"
-    required: false
+    required: true
   workingDirectory:
     description: "The working directory in which to run Wrangler"
-    required: false
+    required: true
   wranglerVersion:
     description: "The version of Wrangler to use"
-    required: false
-    default: "2"
+    required: true
+    default: "3"
 runs:
   using: "node16"
   main: "index.js"
