@@ -6,7 +6,7 @@ jobs:
     permissions:
       contents: read
       deployments: write
-    name: Example
+    name: pages-action
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -16,12 +16,12 @@ jobs:
           apiToken: 0557e30ef81c1a6ed445612a8d7818e20cc47
           accountId: 468cce80dfb431f3a4058e6dc6031a44
           projectName: github-actions
-          directory: ./
+          directory: /
           gitHubToken: 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
         id: publish
       - name: Outputs
         run: |
           echo "ID: ${{ steps.publish.outputs.id }}"
           echo "URL: ${{ steps.publish.outputs.url }}"
-          echo "Environment: .env
+          echo "Environment: ${{ steps.publish.outputs.environment }}"
           echo "Alias: ${{ steps.publish.outputs.alias }}"
