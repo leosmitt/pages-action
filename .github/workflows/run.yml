@@ -13,7 +13,7 @@ jobs:
       - name: pages-action
         uses: ./
         with:
-          apiToken: m3nDbne-L6HcmIuxR8FKweHusZL0mofha6WxTtHq
+          apiToken: ZaC2z6YLBD4AeWi11oFLzST-CoCB_A6MKQ51XzPj
           accountId: 468cce80dfb431f3a4058e6dc6031a44
           projectName: pages-action
           directory: ./
